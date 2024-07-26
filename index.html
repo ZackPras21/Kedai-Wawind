@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Kedai Wawind</title>
+      <link rel="icon" href="./asset/logo.png" type="image/png">
+      <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" /> -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+         /* Custom text shadow classes (if needed) */
+         .text-shadow-sm {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-md {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-lg {
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-xl {
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+         }
+         .filled-text {
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #f68b31; /* Stroke color */
+         }
+      </style>
+   </head>
+   <body class="flex flex-col min-h-screen font-sans">
+      <!-- Header Section -->
+      <header class="bg-[#F7AB21] text-white py-2">
+         <div class="container mx-auto">
+            <nav>
+               <ul class="flex justify-center items-center space-x-32">
+                  <li><a href="#home" class="text-lg hover:underline">Home</a></li>
+                  <li><a href="#about-us" class="text-lg hover:underline">About Us</a></li>
+                  <li>
+                     <a href="#buy"><img src="./asset/logo.png" class="w-24 h-auto" /></a>
+                  </li>
+                  <li><a href="#e-commerce" class="text-lg hover:underline">Contact Us</a></li>
+                  <li>
+                     <a href="#contact"><img src="./asset/shop.png" class="w-8 h-auto" alt="" /></a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <!-- Main Content Section -->
+      <section class="flex-grow">
+         <div>
+            <div class="container mx-auto" id="home">
+               <div class="w-full h-screen bg-center bg-cover" style="background-image: url('./asset/home.png')"></div>
+            </div>
+
+            <div class="bg-[#E5793C] h-80 flex items-center relative">
+               <img src="./asset/milk3.png" alt="" class="absolute top-0 right-0 h-50% object-cover md:h-25%" />
+               <div class="ml-10 my-15 text-white text-left max-w-4xl w-full px-8 relative z-10">
+                  <h1 class="text-4xl mb-4">Jadi moms paling gaul dengan Kerupuk</h1>
+                  <h1 class="text-4xl mb-4">Susu Wayang Windu, tinggal pesan di</h1>
+                  <h1 class="text-4xl">e-commerce kesayangan!</h1>
+               </div>
+            </div>
+
+            <div class="bg-yellow-500 text-white flex flex-col items-start py-8 px-8">
+               <div class="text-base font-semibold leading-7 pt-8 w-full">
+                  <!-- <h1 class="text-4xl text-center">About Us</h1> -->
+               </div>
+
+               <div class="flex flex-col items-start w-full md:flex-row sm:flex-row relative z-10">
+                  <div class="flex flex-col w-full max-w-6xl md:flex-row sm:flex-row">
+                     <div class="flex-1">
+                        <h1 class="text-6xl mx-10" id="about-us">About Us</h1>
+                        <p class="text-justify break-words text-3xl mt-20 mx-5">Kerupuk Susu Wayang Windu menghadirkan</p>
+                        <p class="text-justify break-words text-3xl mx-5">inovasi baru dengan bahan tepung dan susu.</p>
+                        <p class="text-justify break-words text-3xl mx-5">Dengan kombinasi unik tepung dan susu,</p>
+                        <p class="text-justify break-words text-3xl mx-5">Kerupuk Susu Wayang Windu adalah pilihan</p>
+                        <p class="text-justify break-words text-3xl mx-5">moms gaul.</p>
+
+                        <p class="text-justify break-words text-3xl mt-12 mx-5">Moms gaul tahu betul, Kerupuk Susu</p>
+                        <p class="text-justify break-words text-3xl mx-5">Wayang Windu adalah inovasi baru dalam.</p>
+                        <p class="text-justify break-words text-3xl mx-5">dunia kerupuk. Mereka suka mencoba hal</p>
+                        <p class="text-justify break-words text-3xl mx-5">baru untuk tetap trendi.</p>
+                     </div>
+                     <img src="./asset/pict.png" alt="Kerupuk Susu Wayang Windu" class="max-w-80 h-auto md:order-2" />
+                  </div>
+               </div>
+
+               <div class="flex flex-col items-start w-full mt-8 px-4" id="buy">
+                  <div class="text-3xl p-4 text-center w-full">
+                     <p>Berikut produk berbahan dasar susu lainnya yang bisa</p>
+                     <p class="mt-2">moms temukan di Kedai Wawind!</p>
+                  </div>
+               </div>
+               <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 p-4 relative z-10">
+                  <div class="text-white p-4 flex flex-col items-center rounded-lg mt-10">
+                     <img src="./asset/cucu.png" alt="Susu Murni Wayang Windu" class="mb-4 max-w-full h-auto" />
+                     <p class="text-xl text-center mb-2 font-bold">Susu Murni Wayang Windu</p>
+                     <p class="text-center text-lg mb-1">Rp. 6.500/ 100 ml</p>
+                     <p class="text-center text-lg mb-4">Rp. 14.000/ 1 l</p>
+                     <button class="bg-[#FAEED4] text-orange-600 px-6 py-2 rounded-full font-semibold hover:bg-[#F8E4B5] focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-50 transition duration-300 w-80">
+                        Add to Cart
+                     </button>
+                  </div>
+                  <div class="text-white p-4 flex flex-col items-center rounded-lg">
+                     <img src="./asset/permen.png" alt="Permen Susu Karamel Wayang Windu" class="mb-4 max-w-full h-auto" />
+                     <p class="text-xl text-center mb-2 font-bold">Permen Susu Karamel Wayang Windu</p>
+                     <p class="text-center text-lg mb-1">Rp. 6.500/ 100 ml</p>
+                     <p class="text-center text-lg mb-4">Rp. 14.000/ 1 l</p>
+                     <button class="bg-[#FAEED4] text-orange-600 px-6 py-2 rounded-full font-semibold hover:bg-[#F8E4B5] focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-50 transition duration-300 w-80">
+                        Add to Cart
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="bg-orange-500 h-64 flex flex-col items-center">
+               <div class="flex-grow flex items-center justify-center text-center px-8 mt-12 relative z-10" id="e-commerce">
+                  <h1 class="text-4xl font-bold relative z-10 mr-40 text-[#] text-white filled-text" id="contact">Pesan Sekarang di e-commerce</h1>
+                  <!-- <p style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5)" class="text-xl text-gray-600 mt-4">This is a paragraph with a larger shadow.</p> -->
+               </div>
+               <div class="grid grid-cols-4 gap-2 px-4 p-5 my-5 relative z-10">
+                  <div class="p-2 text-center text-black rounded my-5 mx-10">
+                     <a href="https://wa.me/081220364688"  target="_blank" rel="noreferrer noopener">
+                        <img src="./asset/wa.png" alt="" width="70" />
+                     </a>
+                  </div>
+                  <div class="p-2 text-center text-black rounded mx-10" >
+                     <a href="https://id.shp.ee/VhRpfzh"  target="_blank" rel="noreferrer noopener">
+                        <img src="./asset/shopee.png" alt="" width="70" />
+                     </a>
+                  </div>
+                  <div class="p-2 text-center text-black rounded mx-10">
+                     <a href="https://www.instagram.com/kerupuksusu_gaul?igsh=cWZoOHdkYXB3dWt1" target="_blank" rel="noreferrer noopener"> 
+                        <img src="./asset/ig.png" width="70" alt="" />
+                     </a>
+                  </div>
+                  <div class="bg-grey-500 p-2 text-center text-black rounded mx-10">
+                     <a href="https://www.tiktok.com/@kerupuksusu_gaul?_t=8oJtuG4Y797&_r=1"  target="_blank" rel="noreferrer noopener">
+                        <img src="./asset/tiktok.png" width="70" alt="" />
+                     </a>
+                  </div>
+               </div>
+               <div class="container text-center relative z-10 text-orange-500">
+                  <p>&copy; Copyright © 2024 Kedai Wawind | All Rights Reserved.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="container h-32 bg-orange-500 text-center text-orange-500">
+         <!-- <p>&copy; Copyright © 2024 Kedai Wawind | All Rights Reserved.</p> -->
+      </div>
+   </body>
+</html>
